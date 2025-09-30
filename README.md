@@ -104,6 +104,7 @@ TEMPERATURE=0.7
 ├── .gitignore             # Исключения Git
 ├── build.py               # Скрипт сборки
 ├── requirements.txt       # Зависимости Python
+├── test_telegram.py       # Скрипт проверяющий связь с телеграм ботом
 └── README.md              # Документация
 ```
 
