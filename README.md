@@ -14,36 +14,10 @@
 2. **Клонирование проекта**
    ```bash
    # Клонируйте репозиторий
-   git clone https://github.com/neuro-fill/51-lesson.git
-   # Перейдите в директорию проекта
-   cd 51-lesson
+   git clone https://github.com/panfiloow/MyAIChat.git
    ```
 
-3. **Настройка VSCode**
-   - Откройте VSCode
-   - Установите рекомендуемые расширения:
-     - Python (ms-python.python)
-     - Python Environment Manager
-     - Python Extension Pack
-   - Откройте проект: File -> Open Folder -> выберите папку 51-lesson
-   - Выберите интерпретатор Python: 
-     1. Нажмите F1 или Ctrl+Shift+P
-     2. Введите "Python: Select Interpreter"
-     3. Выберите Python 3.9 или выше
-
-4. **Настройка виртуального окружения**
-   ```bash
-   # Создание виртуального окружения
-   python -m venv venv
-   
-   # Активация виртуального окружения
-   # Для Windows:
-   .\venv\Scripts\activate
-   # Для Linux/Mac:
-   source venv/bin/activate
-   ```
-
-5. **Настройка переменных окружения**
+3. **Настройка переменных окружения**
    - Скопируйте файл `.env.example` в новый файл `.env`
    - Откройте `.env` и замените `your_api_key_here` на ваш API ключ OpenRouter
    - Остальные настройки можно оставить по умолчанию
@@ -120,8 +94,10 @@ TEMPERATURE=0.7
 │   │   ├── __init__.py
 │   │   ├── analytics.py   # Аналитика использования
 │   │   ├── cache.py       # Кэширование
-│   │   ├── logger.py      # Система логирования
+│   │   ├── logger.py  # Система логирования
+│   │   ├── notifications.py # Система уведомлений     
 │   │   └── monitor.py     # Мониторинг системы
+│   │ 
 │   ├── main_simple.py     # Упрощенная версия main.py с урезанным функционалом
 │   └── main.py            # Точка входа приложения
 ├── .env.example           # Пример конфигурации
@@ -154,6 +130,7 @@ TEMPERATURE=0.7
    - Кэширование для оптимизации производительности
    - Подробное логирование работы приложения
    - Мониторинг системных ресурсов
+   - Уведомление о низком балансе
 
 ### Технические особенности
 
